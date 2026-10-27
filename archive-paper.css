@@ -1,0 +1,60 @@
+/* Archive paper finish: decorative texture, no historical content. */
+:root{--bg:#eee8db;--paper:#fffdf6;--line:#d8cbb3;--muted:#526574}
+body{
+ background-color:#eee8db;
+ background-image:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23795b32' opacity='.055' filter='url(%23n)' d='M0 0h160v160H0z'/%3E%3C/svg%3E"),
+  radial-gradient(ellipse at 0% 15%,#b58a4930 0,transparent 42%),
+  radial-gradient(ellipse at 100% 75%,#9a754127 0,transparent 44%),
+  linear-gradient(110deg,#eee8dc,#faf6eb 43%,#e8e1d1);
+ background-size:160px 160px,100% 1100px,100% 1300px,100% 100%;
+}
+main.shell{
+ position:relative;
+ background:linear-gradient(90deg,#fffdf30a,#fffdf5a8 10%,#fffdf5a8 90%,#fffdf30a);
+ min-height:65vh;
+}
+main.shell:before,main.shell:after{
+ content:"";position:absolute;pointer-events:none;width:94px;height:94px;opacity:.42;
+ border-color:#b48a4e;border-style:solid;
+}
+main.shell:before{left:13px;top:15px;border-width:1px 0 0 1px;border-radius:12px 0 0 0}
+main.shell:after{right:13px;bottom:15px;border-width:0 1px 1px 0;border-radius:0 0 12px 0}
+.page-heading{padding:10px 0 20px;border-bottom:1px solid #b88c4b40}
+.page-heading h2{text-shadow:0 1px #fffdf4}
+.topic-card,.archive-card,.figure,.source-audit,.project-card,.references,.task-zone,.interpretation,.event,.person-choice,.formula{
+ background-color:#fffdf7;
+ background-image:linear-gradient(125deg,#b58a4906,transparent 40%,#b58a4905);
+ border-color:#d8c9ad;
+ box-shadow:0 5px 18px #493a2110;
+}
+.source-audit,.project-card,.references,.task-zone{border-radius:12px}
+.figure,.formula,.interpretation{border-radius:10px}
+.figure{border-top:3px solid #346a79}
+.figure:nth-child(2){border-top-color:#ad7c34}
+.archive-picture{background:radial-gradient(ellipse,#f7f1e3,#e6dcc8);box-shadow:inset 0 0 32px #9e7d4820}
+.audit-table th{background:#ece4d3;color:#173044}
+.audit-table tbody tr:nth-child(even){background:#eee7d54d}
+.audit-table td,.audit-table th{border-color:#d5c7ad}
+.formula{border-color:#b48a4e;background:linear-gradient(110deg,#faf1db,#fffdf6 50%,#faf1db)}
+.bibliography-scans details{box-shadow:0 7px 24px #493a2110}
+.nav{background:#fffcf4f5;border-bottom-color:#d8c9ad}
+.nav a:hover{background:#efe6d3}
+.footer{border-color:#cbb893;color:#4c606b}
+@media(max-width:700px){
+ main.shell:before,main.shell:after{width:34px;height:34px;opacity:.32}
+ main.shell:before{left:7px;top:10px}main.shell:after{right:7px;bottom:10px}
+ .page-heading{padding-top:7px}
+}
+@media print{body,main.shell{background:#fff!important}main.shell:before,main.shell:after{content:none}.topic-card,.archive-card,.figure,.source-audit,.project-card,.references,.task-zone,.interpretation,.event,.formula{box-shadow:none;background:#fff}}
+
+/* Gold ornamental corners, inspired by manuscript decoration. */
+main.shell:before,main.shell:after{width:140px;height:140px;border:0;border-radius:0;opacity:.63;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20140%20140%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23b78737%22%20stroke-width%3D%221.4%22%3E%3Cpath%20d%3D%22M8%20130V22Q8%208%2022%208h108M15%20107V27q0-12%2012-12h80%22%2F%3E%3Cpath%20d%3D%22M25%2082V39q0-14%2014-14h43M25%2052c34%203%2036-24%2021-24-12%200-13%2015-3%2015%207%200%208-8%203-9M52%2025c3%2034-24%2036-24%2021%200-12%2015-13%2015-3%200%207-8%208-9%203M26%2078c19-14%2040-9%2034%208-4%2012-19%2010-17%200%202-7%2010-6%2010%200M78%2026c-14%2019-9%2040%208%2034%2012-4%2010-19%200-17-7%202-6%2010%200%2010%22%2F%3E%3Cpath%20d%3D%22m15%2015%208%208M67%2067l5-5%205%205-5%205z%22%2F%3E%3Ccircle%20cx%3D%2225%22%20cy%3D%2225%22%20r%3D%223%22%20fill%3D%22%23e7c880%22%2F%3E%3Cpath%20d%3D%22M85%208h10m8%200h5M8%2085v10m0%208v5%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-size:contain;background-repeat:no-repeat}
+main.shell:before{left:2px;top:4px}
+main.shell:after{right:2px;bottom:4px;transform:rotate(180deg)}
+.page-heading{position:relative;border-bottom:1px solid #b88c4b70;padding-bottom:24px}
+.page-heading:after{content:"";position:absolute;bottom:-3px;left:0;width:86px;height:5px;border-radius:3px;background:linear-gradient(90deg,#9e6a24,#edce82,#9e6a24)}
+.topic-card,.archive-card,.figure,.source-audit,.project-card,.references,.task-zone,.interpretation,.event,.person-choice,.formula{border-color:#c8ad76;box-shadow:0 5px 20px #493a2110,inset 0 0 0 3px #fffdf5,inset 0 0 0 4px #c4a26022}
+.section-label{color:#8c6025;letter-spacing:.1em}
+.comparison-banner,.life-intro{border:1px solid #b88c4b;box-shadow:inset 0 0 0 5px #102739,inset 0 0 0 6px #e5b97155}
+@media(max-width:700px){main.shell:before,main.shell:after{width:74px;height:74px;opacity:.4}main.shell:before{left:0;top:0}main.shell:after{right:0;bottom:0}}
