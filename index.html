@@ -147,7 +147,8 @@ const cards=[
 ['#tasks','Білімді бекіту','Интерактивті тапсырмалар','Тест, хронология және «Кодты тап» арқылы біліміңізді тексеріңіз.','task-timeline.jpg'],
 ['#videos','Бейнесұхбат және тарих','Бейнематериалдар','Куәгер естеліктерін және өңір тарихы туралы қысқа бейнелерді көріңіз.','soviet-campaign.jpg'],
 ['https://jazirakur-netizen.github.io/tulkibas-book/','Парақталатын кітаптар','Өлкетану кітапханасы','Түлкібас тарихы туралы суретті кітаптарды парақтаңыз.','task-turkistan.jpg'],
-['#project','Оқушылар зерттеуі','Ғылыми жоба','Мақта дайындау науқаны мен оның адам тағдырына әсері туралы зерттеу.','task-industry.jpg']
+['#project','Оқушылар зерттеуі','Ғылыми жоба','Мақта дайындау науқаны мен оның адам тағдырына әсері туралы зерттеу.','task-industry.jpg'],
+['tarihi-trenazherlar.html','Өлкетану зертханасы','Тарихи тренажерлар','Мақта тарихын төрт интерактивті тренажер арқылы зерттеңіз.','trainer-cover.webp']
 ];
 return `<section aria-labelledby="home-title"><div class="home-intro"><div><span class="home-kicker">Түлкібас өңірі</span><h1 id="home-title">Өлке тарихы</h1><p>Туған өлкенің өткенін құжаттар, адам тағдыры және интерактивті тапсырмалар арқылы таныңыз.</p></div></div><div class="home-grid">${cards.map(([href,kind,title,desc,src],i)=>`<a class="home-card" href="${esc(href)}"><div class="home-cover"><img src="${esc(src)}" alt="" ${i>3?'loading="lazy"':''}><span class="home-no" aria-hidden="true">${String(i+1).padStart(2,'0')}</span></div><div class="home-content"><span class="home-type">${esc(kind)}</span><h2>${esc(title)}</h2><p>${esc(desc)}</p><div class="home-open"><span>Бөлімді ашу</span><span aria-hidden="true">→</span></div></div></a>`).join('')}</div><p class="home-credit">${photoCredit} Қалған мұқабалар — тақырыптық көрнекіліктер.</p></section>`;
 }
